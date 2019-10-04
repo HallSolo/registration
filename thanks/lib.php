@@ -19,8 +19,9 @@ define('EMAIL_DUBLICATE', 1);
 define('EMAIL_SEND_ERORR', 2);
 define('USER_ADD_ERORR', 3);
 
-
 define('USER_PREFIX', 'ross-');
+define('USER_PATH_DIR', './');
+define('USER_FILE_NAME', 'grant_6m_registration_');
 
 require_once($CFG->dirroot.'/user/lib.php');
 require_once($CFG->dirroot.'/cohort/lib.php');
@@ -29,7 +30,7 @@ require_once($CFG->dirroot.'/cohort/lib.php');
 function save_file_to_disk($path, $filename, $data){
     $file = $path."/".$filename;
     $f = fopen($file,'a+');
-    fwrite($f, $data);
+    fwrite($f, $data."\n");
     fclose($f);
 
     if(file_exists($file)) return true;
@@ -142,6 +143,7 @@ function set_profile_info($user){
 
     profile_save_custom_fields($user->id, $profilefield);
 
+    return $profilefield;
 }
 
 
@@ -237,8 +239,25 @@ function send_email($user, $password){
     return email_user($user, $supportuser, $subject, $message);
 }
 
+function save_user($data1, $data2){
+
+    $data = array_merge($data1, $data2);
+
+    unset($data['password']);
+    $lang = $data['lang'];
+
+    $data = implode(';', $data);
+
+    save_file_to_disk( USER_PATH_DIR, USER_FILE_NAME.$lang.".txt", $data);
+}
+
 
 function add_to_cohort($user){
+    global $CFG;
+
+    if(empty($user->lang))
+        $user->lang = $CFG->lang;
+
     switch ($user->lang) {
         case 'ru':
             $cohort = RU_COHORT;
@@ -263,14 +282,18 @@ function add_user(){
         return EMAIL_DUBLICATE;
     }
 
-    list($user, $password) = create_user();
-    $user->id = user_create_user($user, false, false);
+    list($user_raw, $password) = create_user();
+    $user = clone $user_raw;
+    $user->id = user_create_user($user_raw, false, false);
 
     if(!isset($user->id)) {
         return USER_ADD_ERORR;
     }
 
-    set_profile_info($user);
+    $data = set_profile_info($user);
+
+    save_user((array)$user_raw, (array)$data);
+
     add_to_cohort($user);
 
     send_email($user, $password);
