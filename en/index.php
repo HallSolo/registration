@@ -13,7 +13,7 @@ header('Content-language: en');
 	<link rel="shortcut icon" href="../assets/images/logo-fu-rus-light-307x128.png" type="image/x-icon">
 	<meta name="description" content="">
 
-	<title>Регистрация</title>
+	<title>Educational program of the Financial University under the Government of the Russian Federation</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
 	<link rel="preload" as="style" href="../assets/web/../assets/fa-icons/fa-icons.css">
 	<link rel="stylesheet" href="../assets/web/../assets/fa-icons/fa-icons.css">
@@ -41,7 +41,8 @@ header('Content-language: en');
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="#content3-1c">About</a></li><li class="nav-item"><a class="nav-link link" href="#content3-1b">Заявка на обучение<br></a></li><li class="nav-item"><a class="nav-link link" href="../" style="color: #fff; font-weight: bold;">РУС<br></a></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="#content3-1c">About</a></li><li class="nav-item"><a class="nav-link link" href="#content3-1b">Apply for the program
+<br></a></li><li class="nav-item"><a class="nav-link link" href="../" style="color: #fff; font-weight: bold;">РУС<br></a></li></ul>
 
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
@@ -68,7 +69,8 @@ header('Content-language: en');
 
                     <h1 class="mbr-section-title display-1 heading-title">Educational program of the Financial University under the Government of the Russian Federation</h1>
                     <p class="mbr-section-subtitle sub-2 heading-text">with grant support from the Federal Agency for the Commonwealth of Independent States (Rossotrudnichestvo)<br><br>Program for students, teachers, administrations of Russian schools abroad. Participants can choose one or more educational courses.&nbsp;<br></p>
-                    <div class="mbr-section-btn"><a class="btn btn-md btn-primary" href="index.html#content3-1b">Подать заявку на обучение<br></a></div>
+                    <div class="mbr-section-btn"><a class="btn btn-md btn-primary" href="index.html#content3-1b">Apply for the program
+<br></a></div>
                 </div>
             </div>
         </div>
@@ -220,7 +222,8 @@ header('Content-language: en');
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
-                <div class="text-xs-center"><a class="btn btn-lg btn-primary" href="index.html#content3-1b">Подать заявку на обучение </a> </div>
+                <div class="text-xs-center"><a class="btn btn-lg btn-primary" href="index.html#content3-1b">Apply for the program
+</a> </div>
             </div>
         </div>
     </div>
@@ -254,8 +257,7 @@ header('Content-language: en');
                                 <h4 class="panel-title"><a role="button" class="" data-toggle="collapse" data-parent="#accordion1-c-init" data-core="" href="#collapseTwoaccordion1-c" aria-expanded="true" aria-controls="collapseTwo">Who is it for?</a></h4>
                             </div>
                             <div id="collapseTwoaccordion1-c" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body"><p>Программа реализуется для учеников 9-11 классов, учителей, представителей администрации школ, а также всех, кто хочет разобраться в основах цифровизации экономики.</p><p>Участники могут выбрать один или несколько образовательных курсов, которые захотят изучить.
-</p></div>
+                                <div class="panel-body"><p>The program is designed for 9-11th grade students, teachers, school administrators, and anyone who wants to understand the basics of digitalization of the economy.</p><p>The program is designed for 9-11th grade students, teachers, school administrators, and anyone who wants to understand the basics of digitalization of the economy.</p></div>
                             </div>
                         </div>
                         <div class="panel panel-default" style="display: block;">
@@ -264,11 +266,11 @@ header('Content-language: en');
                                 <h4 class="panel-title"><a role="button" class="" data-toggle="collapse" data-parent="#accordion1-c-init" data-core="" href="#collapseThreeaccordion1-c" aria-expanded="true" aria-controls="collapseThree">What is it about?</a></h4>
                             </div>
                             <div id="collapseThreeaccordion1-c" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body"><p>Из наших образовательных курсов вы узнаете:
-</p><p>- об особенностях функционирования финансовых рынков, которые изменяются в условиях перехода к цифровой экономике;
-</p><p>- как эффективно использовать цифровые инструменты продвижения своего продукта потребителю;
-</p><p>- чем характеризуется и для чего нужна технология блокчейн и как она используется в повседневной жизни. 
-</p><p>Пройдя наши курсы, вы сможете подготовиться к поступлению в вуз: мы сформировали учебные материалы, которые структурируют знания, помогающие успешно пройти вступительные испытания.</p></div>
+                                <div class="panel-body"><p>By taking our courses, you will learn:
+</p><p>- about financial markets and how they change in the process of digitalization;
+</p><p>- how to effectively use digital tools to promote your product;
+</p><p>- why blockhain technology is so unique and how it is used in everyday life.  
+</p><p>After taking our courses, you will be able to prepare for admission to the university: we have developed educational materials that structure the information needed to successfully pass the entrance tests. </p></div>
                             </div>
                         </div>
                         <div class="panel panel-default" style="display: block;">
@@ -277,7 +279,7 @@ header('Content-language: en');
                                 <h4 class="panel-title"><a role="button" class="" data-toggle="collapse" data-parent="#accordion1-c-init" data-core="" href="#collapseFouraccordion1-c" aria-expanded="true" aria-controls="collapseFour">When will it take place?</a></h4>
                             </div>
                             <div id="collapseFouraccordion1-c" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body"><p>Обучение будет проходить в два этапа: с 10 октября по 10 ноября и с 11 ноября  по 11 декабря. По итогам успешного прохождения курсов возможно получение электронного сертификата.
+                                <div class="panel-body"><p>The training will take place in two stages: from October 10 to November 10 and from November 11 to December 11. According to the results of all training courses, it is possible to obtain an electronic certificate.
 </p></div>
                             </div>
                         </div>
@@ -318,7 +320,7 @@ header('Content-language: en');
 
                 <div class="row" data-form-type="formoid">
                     <div data-form-alert="true">
-                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Спасибо! Ваши данные успешно отправлены.</div>
+                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center"></div>
                     </div>
 
 
@@ -630,9 +632,9 @@ header('Content-language: en');
                                 <div class="form-group">
                                     <label class="form-control-label">Status</label>
 									<select class="form-control form-control-lg" name="status" data-form-field="status" id="id_status" autocomplete="status" style="background-color: #fff !important; border-radius: 0 !important; border: 1px solid #c7c9cc !important;" required="" data-language="en_US">
-										<option value="">Укажите статус...</option>
-										<option value="ученик">ученик</option>
-										<option value="преподаватель">преподаватель / сотрудник</option>
+										<option value="">Indicate Status...</option>
+										<option value="ученик">study</option>
+										<option value="преподаватель">teacher / worker</option>
 									</select>
 								</div>
                             </div>
@@ -652,7 +654,7 @@ header('Content-language: en');
                         <div class="form-separator"></div>
 
                         <div class="col-xs-12 col-md-8 col-md-offset-2 form-button-wrap">
-							<div class="text-xs-center text-md-right"><button type="submit" id="registrationformsubmit" disabled class="btn btn-lg btn-primary mbr-editable-button" style="font-family: Roboto, sans-serif; color: rgb(255, 255, 255);" data-language="en_US">Зарегистрироваться</button></div>
+							<div class="text-xs-center text-md-right"><button type="submit" id="registrationformsubmit" disabled class="btn btn-lg btn-primary mbr-editable-button" style="font-family: Roboto, sans-serif; color: rgb(255, 255, 255);" data-language="en_US">Send</button></div>
                         </div>
 
 						<input type="hidden" name="lang" value="en">
@@ -670,7 +672,7 @@ header('Content-language: en');
 <div id="footer4-5" custom-code="true" data-rv-view="28"><footer class="mbr-small-footer mbr-section mbr-section-nopadding footer4" data-rv-view="4" style="background-color: rgb(0, 91, 102); padding-top: 1.75rem; padding-bottom: 0rem;">
     
     <div class="container">
-        <p class="text-xs-left mbr-editable-content">FINANCIAL UNIVERSITY © ® 1998-<?php echo date('Y'); ?><br>125993, Moscow, Leningradsky Prospekt, 49</p>
+        <p class="text-xs-left mbr-editable-content">FINANCIAL UNIVERSITY © ® 1998-<?php echo date('Y'); ?><br>125993, Moscow, Leningradsky Prospekt, 49<br><br>Technical support: <a href="mailto:e-support@fa.ru">e-support@fa.ru</a></p>
     </div>
 </footer></div>
 
@@ -696,6 +698,6 @@ header('Content-language: en');
         });
         </script>
 
-		
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(55616593, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/55616593" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->		
 </body>
 </html>

@@ -13,3 +13,5 @@ To enter, please use the following data:
 In case of technical difficulties, contact the technical support service of distance learning systems: {$a->signoff}
 
 We wish you success in your studies!';
+$string['sitefullname'] = 'FINANCIAL UNIVERSITY';
+$string['supportfullname'] = 'support';

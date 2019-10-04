@@ -78,7 +78,7 @@ function send_email($user, $password){
 
     $a = new stdClass();
     $a->firstname   = fullname($user, true);
-    $a->sitename    = format_string($site->fullname);
+    $a->sitename    = format_string(get_lang_string('sitefullname', null, $user->lang));
     $a->username    = $user->username;
     $a->newpassword = $password;
     $a->link        = $CFG->wwwroot .'/login/?lang='.$lang;

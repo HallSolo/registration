@@ -12,8 +12,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-define('RU_COHORT', 1);
-define('EN_COHORT', 2);
+define('RU_COHORT', 20);
+define('EN_COHORT', 21);
 
 define('EMAIL_DUBLICATE', 1);
 define('EMAIL_SEND_ERORR', 2);
@@ -82,7 +82,7 @@ function random_password($length = 8, $type = 'alpha_numeric') {
             break;
         default:
             return null;
-
+    }
             $min = 0;
             $max = strlen($chars) - 1;
 
@@ -95,7 +95,6 @@ function random_password($length = 8, $type = 'alpha_numeric') {
             }
 
             return $password;
-    }
 }
 
 
@@ -134,9 +133,8 @@ function set_profile_info($user){
     require_once($CFG->dirroot . '/user/profile/lib.php');
 
     $country     = optional_param('country', '', PARAM_TEXT);
-    $countries   = get_string_manager()->get_list_of_countries(true, true);
     if(!empty($country))
-        $profilefield['country_name'] = (string)new lang_string($country, 'core_countries', null, $user->lang);
+        $profilefield['country_name'] = get_string($country, 'core_countries');
 
     $profilefield['user_clever'] = optional_param('status', '', PARAM_TEXT);
     $profilefield['register_date'] = date('Y-m-d H:i');
@@ -198,9 +196,11 @@ function email_user($user, $from, $subject, $message){
     $noreplyaddressdefault = 'noreply@' . get_host_from_url($CFG->wwwroot);
     $noreplyaddress = empty($CFG->noreplyaddress) ? $noreplyaddressdefault : $CFG->noreplyaddress;
 
+    $lang = empty($user->lang) ? $CFG->lang : $user->lang;
+
     $mail = get_mailer();
     $mail->From     = $noreplyaddress;
-    $mail->FromName = fullname($from);
+    $mail->FromName = get_lang_string('supportfullname', null, $lang);
     //$mail->WordWrap = 80;
     $mail->Sender = $noreplyaddress;
 
@@ -223,7 +223,7 @@ function send_email($user, $password){
 
     $a = new stdClass();
     $a->firstname   = fullname($user, true);
-    $a->sitename    = format_string($site->fullname);
+    $a->sitename    = $site->fullname;
     $a->username    = $user->username;
     $a->newpassword = $password;
     $a->link        = $CFG->wwwroot .'/login/?lang='.$lang;
@@ -231,7 +231,7 @@ function send_email($user, $password){
 
     $message = get_lang_string('newusernewpasswordtext', $a, $lang);
 
-    $subject = format_string($site->fullname) .': '. get_lang_string('newusernewpasswordsubj', $a, $lang);
+    $subject = format_string(get_lang_string('sitefullname', null, $lang)) .': '. get_lang_string('newusernewpasswordsubj', $a, $lang);
 
     // Directly email rather than using the messaging system to ensure its not routed to a popup or jabber.
     return email_user($user, $supportuser, $subject, $message);
@@ -263,7 +263,7 @@ function add_user(){
         return EMAIL_DUBLICATE;
     }
 
-    list($user,$password) = create_user();
+    list($user, $password) = create_user();
     $user->id = user_create_user($user, false, false);
 
     if(!isset($user->id)) {

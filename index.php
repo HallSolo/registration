@@ -43,7 +43,7 @@ if ($lang != 'ru') header('Location: ./en');
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="#content3-1c">Информация</a></li><li class="nav-item"><a class="nav-link link" href="#content3-1b">Заявка на обучение<br></a></li><?php // <li class="nav-item"><a class="nav-link link" href="en" style="color: #fff; font-weight: bold;">EN<br></a></li> */ ?></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="#content3-1c">Информация</a></li><li class="nav-item"><a class="nav-link link" href="#content3-1b">Заявка на обучение<br></a></li><li class="nav-item"><a class="nav-link link" href="en" style="color: #fff; font-weight: bold;">EN<br></a></li></ul>
 
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
@@ -678,7 +678,7 @@ if ($lang != 'ru') header('Location: ./en');
 
 <div id="footer4-5" custom-code="true" data-rv-view="28"><footer class="mbr-small-footer mbr-section mbr-section-nopadding footer4" data-rv-view="4" style="background-color: rgb(0, 91, 102); padding-top: 1.75rem; padding-bottom: 0rem;">
     <div class="container">
-        <p class="text-xs-left mbr-editable-content">ФИНАНСОВЫЙ УНИВЕРСИТЕТ © ® 1998-<?php echo date('Y'); ?><br>125993, Москва, Ленинградский проспект, 49</p>
+        <p class="text-xs-left mbr-editable-content">ФИНАНСОВЫЙ УНИВЕРСИТЕТ © ® 1998-<?php echo date('Y'); ?><br>125993, Москва, Ленинградский проспект, 49<br><br>Техническая поддержка: <a href="mailto:e-support@fa.ru">e-support@fa.ru</a></p>
     </div>
 </footer></div>
 
@@ -704,6 +704,7 @@ if ($lang != 'ru') header('Location: ./en');
         });
         </script>
 
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(55616593, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/55616593" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 		
 </body>
 </html>

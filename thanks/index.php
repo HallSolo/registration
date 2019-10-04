@@ -16,7 +16,7 @@ function clean($value = "") {
     $value = trim($value);
     $value = stripslashes($value);
     $value = strip_tags($value);
-    $value = htmlspecialchars($value);
+    $value = htmlspecialchars($value,ENT_NOQUOTES);
     return $value;
 }
 
@@ -72,7 +72,7 @@ if($_POST){
 
             if($user_post_data['lang'] != 'ru'){
                 $msg['h1'] = 'Registration error!';
-                $msg['p'] = '<span style="color: #777; font-size: 0.9em;">К сожалению мы не смогли завершить регистрацию так как пользователь с таким электронным адресом уже существует.</span><br><br><strong>Пожалуйста заполните форму регистрации еще раз.</strong>';
+		$msg['p'] = '<span style="color: #777; font-size: 0.9em;">Unfortunately, we were unable to complete the registration because the user with this email address already exists.</span><br><br><strong>Please fill in the registration form again.</strong>';
             }else{
                 $msg['h1'] = 'Ошибка регистрации!';
                 $msg['p'] = '<span style="color: #777; font-size: 0.9em;">К сожалению мы не смогли завершить регистрацию так как пользователь с таким электронным адресом уже существует.</span><br><br><strong>Пожалуйста заполните форму регистрации еще раз.</strong>';
@@ -110,7 +110,7 @@ if($_POST){
 
             if($user_post_data['lang'] != 'ru'){
                 $msg['h1'] = 'Thank you for registering!';
-                $msg['p'] = '<span style="color: #777; font-size: 0.9em;">Благодарим за интерес к образовательной программе Финансового университета при Правительстве Российской Федерации при грантовой поддержке Федерального агентства по делам содружества независимых государств («Россотрудничество»)</span><br><br><strong>В ближайшее время заявка будет обработана нашим специалистом и Вы получите доступ к учебным курсам.</strong>';
+			$msg['p'] = '<span style="color: #777; font-size: 0.9em;">Thank you for your interest in the educational program of the Financial University under the Government of the Russian Federation with the grant support of the Federal Agency for the Commonwealth of Independent States ("Rossotrudnichestvo").</span><br><br><strong>In the near future, the application will be processed by our specialist and you will have access to the courses.</strong>';
             }else{
                 $msg['h1'] = 'Ваша заявка принята!';
                 $msg['p'] = '<span style="color: #777; font-size: 0.9em;">Благодарим за интерес к образовательной программе Финансового университета при Правительстве Российской Федерации при грантовой поддержке Федерального агентства по делам содружества независимых государств («Россотрудничество»)</span><br><br><strong>В ближайшее время заявка будет обработана нашим специалистом и Вы получите доступ к учебным курсам.</strong>';
@@ -231,6 +231,6 @@ if($_POST){
   <script async src="../assets/smooth-scroll/smooth-scroll.js"></script>
   <script async src="../assets/theme/js/script.js"></script>
   
-  
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(55616593, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/55616593" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->  
 </body>
 </html>
